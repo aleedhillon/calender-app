@@ -84,3 +84,10 @@ body {
 .button:hover {
     background-color: #4095c6;
 }
+
+.deco-none {
+    text-decoration: none;   
+}
+.mt-10 {
+    margin-top: 10px;
+}
