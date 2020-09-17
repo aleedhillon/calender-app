@@ -32,6 +32,10 @@ function createCalendar(elem, year, month, forMonth = false) {
             let td = document.createElement('td');
             if (date.getDay() === i && date.getMonth() === month) {
                 td.append(document.createTextNode(date.getDate()));
+                if(date.toDateString() === (new Date()).toDateString()){
+                    td.style.backgroundColor = 'blue';
+                    td.style.color = 'white';
+                }
                 date.setDate(date.getDate() + 1);
             }
             tr.append(td);
